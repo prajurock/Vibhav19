@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.vibhav.vibhavee.vibhav">
+
+    <uses-sdk tools:overrideLibrary="android.support.customtabs" />
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/finallogo"
+
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:hardwareAccelerated="false"
+        android:largeHeap="true"
+        >
+        <activity
+            android:name="com.vibhav.vibhavee.vibhav.Splash"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter android:label="@string/app_name">
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".events"
+            android:label="Events"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".placement_fever"
+            android:label="Placement Fever"
+            android:parentActivityName=".events"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.vibhav.vibhavee.vibhav.events" />
+        </activity>
+        <activity
+            android:name=".codeathon"
+            android:label="CodEE"
+            android:parentActivityName=".events"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.vibhav.vibhavee.vibhav.events" />
+        </activity>
+        <activity
+            android:name=".Online"
+            android:label="Bull Stock 2.0"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".events"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.vibhav.vibhavee.vibhav.events" />
+        </activity>
+        <activity
+            android:name=".Paper"
+            android:label="Auction Villa"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".events"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.vibhav.vibhavee.vibhav.events" />
+        </activity>
+        <activity
+            android:name=".Treasure"
+            android:label="Treasure Hunt"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.vibhav.vibhavee.vibhav.MainActivity" />
+        </activity>
+        <activity
+            android:name=".timetable"
+            android:screenOrientation="portrait"
+            android:label="Timings"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".technical"
+            android:label="Technical"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".events">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.vibhav.vibhavee.vibhav.events" />
+        </activity>
+        <activity
+            android:name=".poc"
+            android:label="Technovation"
+            android:parentActivityName=".technical"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.vibhav.vibhavee.vibhav.technical" />
+        </activity>
+        <activity
+            android:name=".Games"
+            android:label="Games"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".events">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.vibhav.vibhavee.vibhav.events" />
+        </activity>
+        <activity
+            android:name=".csgo"
+            android:label="CS-GO "
+            android:screenOrientation="portrait"
+            android:parentActivityName=".Games"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.vibhav.vibhavee.vibhav.Games" />
+        </activity>
+        <activity
+            android:name=".minimilitia"
+            android:label="PUBG-Mobile"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".Games"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.vibhav.vibhavee.vibhav.Games" />
+        </activity>
+        <activity
+            android:name=".NewsFeed"
+            android:label="NewsFeed"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.vibhav.vibhavee.vibhav.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Robo"
+            android:screenOrientation="portrait"
+            android:label="Robotics"
+            android:parentActivityName=".events">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.vibhav.vibhavee.vibhav.events" />
+        </activity>
+        <activity
+            android:name=".roboSoccer"
+            android:label="Robo Soccer 2.0"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".Robo"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.vibhav.vibhavee.vibhav.Robo" />
+        </activity>
+        <activity
+            android:name=".robotics"
+            android:label="Laser Maze"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".Robo"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.vibhav.vibhavee.vibhav.Robo" />
+        </activity>
+        <activity
+            android:name=".aavis"
+            android:label="Aavishkar"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".events"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.vibhav.vibhavee.vibhav.events" />
+        </activity>
+        <activity
+            android:name=".FAQs"
+            android:screenOrientation="portrait"
+            android:label="FAQs"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.vibhav.vibhavee.vibhav.MainActivity" />
+        </activity>
+        <activity
+            android:name=".contactsUs"
+            android:screenOrientation="portrait"
+            android:label="Contact Us"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.vibhav.vibhavee.vibhav.MainActivity" />
+        </activity>
+        <activity
+            android:name=".developers"
+            android:screenOrientation="portrait"
+            android:label="Developers"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.vibhav.vibhavee.vibhav.MainActivity" />
+        </activity>
+        <activity
+            android:name=".PersonProfile"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:label="Profile" />
+        <activity
+            android:name=".Sherlocked"
+            android:label="Sherlocked"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.vibhav.vibhavee.vibhav.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Guest"
+            android:label="Marketing Roadies"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.vibhav.vibhavee.vibhav.MainActivity" />
+        </activity>
+        <activity
+            android:name=".GuestLec"
+            android:label="@string/title_activity_guest_lec"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".madhavBhai"
+            android:label="Registration Form"
+            android:theme="@style/CustomDialogTheme"
+            android:excludeFromRecents="true"
+            ></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.vibhav.vibhavee.vibhav.developers">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_bar_height"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                android:id="@+id/titleImage"
+                android:scaleType="fitXY"
+                app:layout_collapseMode="parallax"
+                app:layout_scrollFlags="scroll|enterAlways|enterAlwaysCollapsed"/>
+
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="com.vibhav.vibhavee.vibhav.developers"
+        tools:showIn="@layout/activity_developers">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                android:elevation="15dp"
+                app:cardCornerRadius="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="125dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/mss" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:textStyle="bold"
+                            android:layout_width="225dp"
+                            android:layout_height="45dp"
+                            android:paddingLeft="20dp"
+                            android:paddingTop="18dp"
+                            android:text="Madhav Shah Sisodiya"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:layout_width="225dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            android:paddingLeft="20dp"
+                            android:paddingTop="8dp"
+                            android:text="2nd Year Electrical Engineering"
+                            android:textSize="15dp" />
+
+                        <LinearLayout
+                            android:layout_width="225dp"
+                            android:layout_height="50dp"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="25dp"
+                                android:onClick="mssgit"
+                                android:src="@drawable/github" />
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="25dp"
+                                android:onClick="mssfb"
+                                android:src="@drawable/fb" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                android:elevation="15dp"
+                app:cardCornerRadius="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="125dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/ar" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:textStyle="bold"
+                            android:layout_width="225dp"
+                            android:layout_height="45dp"
+                            android:paddingLeft="20dp"
+                            android:paddingTop="18dp"
+                            android:text="Adittya Raj"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:layout_width="225dp"
+                            android:layout_height="50dp"
+                            android:paddingLeft="20dp"
+                            android:paddingTop="8dp"
+                            android:text="2nd Year Electrical Engineering"
+                            android:textSize="15dp" />
+
+                        <LinearLayout
+                            android:layout_width="225dp"
+                            android:layout_height="50dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="25dp"
+                                android:onClick="argit"
+                                android:src="@drawable/github" />
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="25dp"
+                                android:onClick="arfb"
+                                android:src="@drawable/fb" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                android:elevation="15dp"
+                app:cardCornerRadius="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="125dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/gp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:textStyle="bold"
+                            android:layout_width="225dp"
+                            android:layout_height="45dp"
+                            android:paddingLeft="20dp"
+                            android:paddingTop="18dp"
+                            android:text="Gaurav Pandey"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:layout_width="225dp"
+                            android:layout_height="50dp"
+                            android:paddingLeft="20dp"
+                            android:paddingTop="8dp"
+                            android:text="2nd Year Electrical Engineering"
+                            android:textSize="15dp" />
+
+                        <LinearLayout
+                            android:layout_width="225dp"
+                            android:layout_height="50dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="25dp"
+                                android:onClick="gpgit"
+                                android:src="@drawable/github" />
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="25dp"
+                                android:onClick="gpfb"
+                                android:src="@drawable/fb" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                android:elevation="15dp"
+                app:cardCornerRadius="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="125dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/pk" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:textStyle="bold"
+                            android:layout_width="225dp"
+                            android:layout_height="45dp"
+                            android:paddingLeft="20dp"
+                            android:paddingTop="18dp"
+                            android:text="Prashant Kumar"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:layout_width="225dp"
+                            android:layout_height="50dp"
+                            android:paddingLeft="20dp"
+                            android:paddingTop="8dp"
+                            android:text="2nd Year Electrical Engineering"
+                            android:textSize="15dp" />
+
+                        <LinearLayout
+                            android:layout_width="225dp"
+                            android:layout_height="50dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="25dp"
+                                android:onClick="pkgit"
+                                android:src="@drawable/github" />
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="25dp"
+                                android:onClick="pkfb"
+                                android:src="@drawable/fb" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                android:elevation="15dp"
+                app:cardCornerRadius="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="125dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/vb" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:textStyle="bold"
+                            android:layout_width="225dp"
+                            android:layout_height="45dp"
+                            android:paddingLeft="20dp"
+                            android:paddingTop="18dp"
+                            android:text="Vishal Bharti"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:layout_width="225dp"
+                            android:layout_height="50dp"
+                            android:paddingLeft="20dp"
+                            android:paddingTop="8dp"
+                            android:text="2nd Year Electrical Engineering"
+                            android:textSize="15dp" />
+
+                        <LinearLayout
+                            android:layout_width="225dp"
+                            android:layout_height="50dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="25dp"
+                                android:onClick="vbgit"
+                                android:src="@drawable/github" />
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="25dp"
+                                android:onClick="vbfb"
+                                android:src="@drawable/fb" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                android:elevation="15dp"
+                app:cardCornerRadius="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="125dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/ss" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:textStyle="bold"
+                            android:layout_width="225dp"
+                            android:layout_height="45dp"
+                            android:paddingLeft="20dp"
+                            android:paddingTop="18dp"
+                            android:text="Shikhar Suman"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:layout_width="225dp"
+                            android:layout_height="50dp"
+                            android:paddingLeft="20dp"
+                            android:paddingTop="8dp"
+                            android:text="2nd Year Electrical Engineering"
+                            android:textSize="15dp" />
+
+                        <LinearLayout
+                            android:layout_width="225dp"
+                            android:layout_height="50dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="25dp"
+                                android:onClick="ssgit"
+                                android:src="@drawable/github" />
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="25dp"
+                                android:onClick="ssfb"
+                                android:src="@drawable/fb" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</android.support.design.widget.CoordinatorLayout>

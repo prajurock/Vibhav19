@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "265514489225",
+    "firebase_url": "https://vibhav-8f90e.firebaseio.com",
+    "project_id": "vibhav-8f90e",
+    "storage_bucket": "vibhav-8f90e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:265514489225:android:cc1583d159bc9fd0",
+        "android_client_info": {
+          "package_name": "com.vibhav.vibhavee.vibhav"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "265514489225-ff00l3g79jthlb1u7nbkasa759tarsmt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLuS_wJ9idw7USd4a7VRdE0K0aTas4j9o"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
